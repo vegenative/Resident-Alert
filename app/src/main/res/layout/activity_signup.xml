@@ -25,7 +25,7 @@
             android:layout_marginTop="32dp"
             android:layout_marginBottom="32dp"
             android:background="@drawable/round_et"
-            android:drawableLeft="@drawable/dogTag_icon"
+            android:drawableLeft="@drawable/dogtag_icon"
             android:ems="10"
             android:hint="ID"
             android:inputType="textPersonName" />
@@ -37,11 +37,10 @@
             android:layout_gravity="center"
             android:layout_marginBottom="32dp"
             android:background="@drawable/round_et"
+            android:drawableLeft="@drawable/password_icon"
             android:ems="10"
             android:hint="Hasło"
-            android:inputType="numberPassword"
-            android:drawableLeft="@drawable/password_icon"
-             />
+            android:inputType="numberPassword" />
 
         <EditText
             android:id="@+id/passwordConfirm_et"
