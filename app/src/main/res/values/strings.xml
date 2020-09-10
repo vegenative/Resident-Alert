@@ -1,4 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Resident Alert</string>
-    <string name="nazwisko">Nazwisko</string>
+    <string name="surname">Nazwisko</string>
+    <string name="check">Sprawdź</string>
+    <string name="id">ID</string>
+    <string name="password">Hasło</string>
+    <string name="confirmPassword">Potwierdź hasło</string>
+    <string name="email">E-mail</string>
+    <string name="name">Imię</string>
+    <string name="phoneNumber">Numer telefonu</string>
+    <string name="adress">Adres zamieszkania</string>
+    <string name="blockNumber">Numer domu,klatka/mieszkanie</string>
+    <string name="city">Miasto</string>
+    <string name="postalCode">Kod pocztowy</string>
+    <string name="SignUp">Zarejestruj się</string>
 </resources>

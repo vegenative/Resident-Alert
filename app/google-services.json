@@ -1,79 +1,34 @@
 {
   "project_info": {
-    "project_number": "637101485420",
-    "firebase_url": "https://trailmap-f236b.firebaseio.com",
-    "project_id": "trailmap-f236b",
-    "storage_bucket": "trailmap-f236b.appspot.com"
+    "project_number": "743559783330",
+    "firebase_url": "https://resident-alert.firebaseio.com",
+    "project_id": "resident-alert",
+    "storage_bucket": "resident-alert.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:637101485420:android:fb810e8e67daaa3cb09749",
+        "mobilesdk_app_id": "1:743559783330:android:60db6e8f176330c28108fb",
         "android_client_info": {
           "package_name": "com.example.residentalert"
         }
       },
       "oauth_client": [
         {
-          "client_id": "637101485420-cquo58jcqrg7dlnaadmuhu8d4aatniia.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.residentalert",
-            "certificate_hash": "9bfaf862a149249bd76f06df563716a3881d7065"
-          }
-        },
-        {
-          "client_id": "637101485420-111bi58j947memm35u11gb6e61epvui4.apps.googleusercontent.com",
+          "client_id": "743559783330-a053h3ku51tunqo3clct3rd3e5e5q8rl.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAXdFUboLOda1TRybVnen1AxL2ywDX9j5s"
+          "current_key": "AIzaSyDpxut7wWCjnVQ7dLFiU0oBFGSoOTh9HPs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "637101485420-mh6jnl3400rad6qjnh5m50c8bjhked1q.apps.googleusercontent.com",
-              "client_type": 3
-            }
-          ]
-        }
-      }
-    },
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:637101485420:android:9a956bf0be8fe8f3b09749",
-        "android_client_info": {
-          "package_name": "com.example.trialmap"
-        }
-      },
-      "oauth_client": [
-        {
-          "client_id": "637101485420-vovneudaerepac6b9juss1h4r7jmj2h4.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.trialmap",
-            "certificate_hash": "9bfaf862a149249bd76f06df563716a3881d7065"
-          }
-        },
-        {
-          "client_id": "637101485420-111bi58j947memm35u11gb6e61epvui4.apps.googleusercontent.com",
-          "client_type": 3
-        }
-      ],
-      "api_key": [
-        {
-          "current_key": "AIzaSyAXdFUboLOda1TRybVnen1AxL2ywDX9j5s"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": [
-            {
-              "client_id": "637101485420-mh6jnl3400rad6qjnh5m50c8bjhked1q.apps.googleusercontent.com",
+              "client_id": "743559783330-a053h3ku51tunqo3clct3rd3e5e5q8rl.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

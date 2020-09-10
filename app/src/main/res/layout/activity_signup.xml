@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#4fc3f7"
+    android:background="@drawable/background_gradient"
     android:visibility="visible"
     tools:context=".Signup">
 
@@ -17,13 +17,14 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible">
+        tools:visibility="visible"
+        >
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imageView2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/logo" />
+            android:layout_height="240dp"
+            app:srcCompat="@drawable/error_icon" />
 
         <EditText
             android:id="@+id/id_et"
@@ -34,10 +35,14 @@
             android:layout_marginBottom="32dp"
             android:autofillHints=""
             android:background="@drawable/round_et"
-            android:drawableLeft="@drawable/dogtag_icon"
+            android:drawableStart="@drawable/dogtag_icon"
+            android:elevation="6dp"
             android:ems="10"
-            android:hint="ID"
-            android:inputType="textPersonName" />
+            android:hint="@string/id"
+            android:inputType="textPersonName"
+
+            android:textAllCaps="false"
+            android:textSize="@dimen/login_textsize" />
 
         <EditText
             android:id="@+id/password_et"
@@ -46,10 +51,12 @@
             android:layout_gravity="center"
             android:layout_marginBottom="32dp"
             android:background="@drawable/round_et"
-            android:drawableLeft="@drawable/password_icon"
+            android:drawableStart="@drawable/password_icon"
+            android:elevation="6dp"
             android:ems="10"
-            android:hint="Hasło"
-            android:inputType="textPassword" />
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:textSize="@dimen/login_textsize" />
 
         <EditText
             android:id="@+id/passwordConfirm_et"
@@ -58,10 +65,25 @@
             android:layout_gravity="center"
             android:layout_marginBottom="32dp"
             android:background="@drawable/round_et"
-            android:drawableLeft="@drawable/key_icon"
+            android:drawableStart="@drawable/key_icon"
+            android:elevation="6dp"
             android:ems="10"
-            android:hint="Potwierdź hasło"
-            android:inputType="textPassword" />
+            android:hint="@string/confirmPassword"
+            android:inputType="textPassword"
+            android:textSize="@dimen/login_textsize" />
+
+        <Button
+            android:id="@+id/check_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/round_btn"
+            android:elevation="10dp"
+            android:text="@string/check"
+            android:textSize="@dimen/login_textsize" />
     </LinearLayout>
 
     <ScrollView
@@ -72,12 +94,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        tools:visibility="visible">
+        tools:visibility="visible"
+        >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#8bf6ff"
+            android:background="@color/colorPrimaryDark"
             android:orientation="vertical">
 
             <EditText
@@ -86,8 +109,10 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="E-mail"
+                android:hint="@string/email"
                 android:inputType="textEmailAddress"
                 android:textAlignment="center" />
 
@@ -96,8 +121,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="Imię"
+                android:hint="@string/name"
                 android:inputType="textEmailAddress"
                 android:textAlignment="center" />
 
@@ -106,9 +133,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:textColorHint="@color/colorPrimary"
                 android:autofillHints=""
                 android:ems="10"
-                android:hint="@string/nazwisko"
+                android:hint="@string/surname"
                 android:inputType="textEmailAddress"
                 android:textAlignment="center" />
 
@@ -117,8 +146,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="Telefon"
+                android:hint="@string/phoneNumber"
                 android:inputType="phone"
                 android:textAlignment="center" />
 
@@ -127,8 +158,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="Adres zamieszkania"
+                android:hint="@string/adress"
                 android:inputType="textPersonName"
                 android:textAlignment="center" />
 
@@ -137,8 +170,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="Numer domu, klatka / mieszkania"
+                android:hint="@string/blockNumber"
                 android:inputType="textPersonName"
                 android:textAlignment="center" />
 
@@ -147,8 +182,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="Miasto"
+                android:hint="@string/city"
                 android:inputType="textPersonName"
                 android:textAlignment="center" />
 
@@ -157,8 +194,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
-                android:hint="Kod pocztowy"
+                android:hint="@string/postalCode"
                 android:inputType="textPersonName"
                 android:textAlignment="center" />
 
@@ -166,8 +205,9 @@
                 android:id="@+id/signup_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/round_bg"
-                android:text="Zarejestruj się" />
+                android:background="@drawable/round_btn"
+                android:text="@string/SignUp"
+                android:layout_marginBottom="16dp"/>
 
         </LinearLayout>
     </ScrollView>
