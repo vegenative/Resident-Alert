@@ -8,4 +8,7 @@
     <color name="colorTransparentWhite">#CCCCCC</color>
     <color name="colorNeonGreen">#80FFEB</color>
     <color name="colorGray">#61707d</color>
+    <color name="colorBackgroundLogin">#292929</color>
+    <color name="colorPanelLogin">#404041</color>
+    <color name="colorAccentLogin">#1E93E8</color>
 </resources>

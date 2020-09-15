@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -42,7 +41,7 @@ public class Signup extends AppCompatActivity {
         //scroll view
         scrollView = (ScrollView) findViewById(R.id.scrollView);
         //layout
-        linearLayout = (LinearLayout) findViewById(R.id.linearLayout);
+        linearLayout = (LinearLayout) findViewById(R.id.lign_ll);
 
 
         checkBtn.setOnClickListener(new View.OnClickListener() {

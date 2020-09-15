@@ -2,8 +2,8 @@
 <resources>
     <string name="app_name">Resident Alert</string>
     <string name="surname">Nazwisko</string>
-    <string name="check">Sprawdź</string>
-    <string name="id">ID</string>
+    <string name="check">Zaloguj się</string>
+    <string name="id">Login</string>
     <string name="password">Hasło</string>
     <string name="confirmPassword">Potwierdź hasło</string>
     <string name="email">E-mail</string>
