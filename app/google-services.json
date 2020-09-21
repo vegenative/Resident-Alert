@@ -1,34 +1,42 @@
 {
   "project_info": {
-    "project_number": "743559783330",
-    "firebase_url": "https://resident-alert.firebaseio.com",
-    "project_id": "resident-alert",
-    "storage_bucket": "resident-alert.appspot.com"
+    "project_number": "189264161180",
+    "firebase_url": "https://residentalertapp.firebaseio.com",
+    "project_id": "residentalertapp",
+    "storage_bucket": "residentalertapp.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:743559783330:android:60db6e8f176330c28108fb",
+        "mobilesdk_app_id": "1:189264161180:android:329a23a11a6b53bdb7c059",
         "android_client_info": {
           "package_name": "com.example.residentalert"
         }
       },
       "oauth_client": [
         {
-          "client_id": "743559783330-a053h3ku51tunqo3clct3rd3e5e5q8rl.apps.googleusercontent.com",
+          "client_id": "189264161180-e5b77qciu4btcej7qr1a8l6qt230f057.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.residentalert",
+            "certificate_hash": "9bfaf862a149249bd76f06df563716a3881d7065"
+          }
+        },
+        {
+          "client_id": "189264161180-tfkekm3gs89746nn83les86endfb0f62.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyDpxut7wWCjnVQ7dLFiU0oBFGSoOTh9HPs"
+          "current_key": "AIzaSyDwNf4sPk7PMvBpb2n_Vw2wF_e76te9vnQ"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "743559783330-a053h3ku51tunqo3clct3rd3e5e5q8rl.apps.googleusercontent.com",
+              "client_id": "189264161180-tfkekm3gs89746nn83les86endfb0f62.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

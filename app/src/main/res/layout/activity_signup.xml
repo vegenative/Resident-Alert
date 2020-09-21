@@ -6,98 +6,8 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackgroundLogin"
     android:visibility="visible"
-    tools:context=".Signup">
+    tools:context=".SignUp">
 
-    <LinearLayout
-        android:id="@+id/lign_ll"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible"
-        >
-
-        <ImageView
-            android:id="@+id/imageView2"
-            android:layout_width="match_parent"
-            android:layout_height="240dp"
-            app:srcCompat="@drawable/messenger_icon2" />
-
-        <LinearLayout
-            android:id="@+id/panel_ll"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:background="@drawable/round_et"
-            android:orientation="vertical"
-            android:layout_marginHorizontal="32dp"
-            android:layout_marginVertical="16dp"
-            android:elevation="1dp"
-            >
-
-            <EditText
-                android:id="@+id/id_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="@color/colorAccentLogin"
-                android:drawableStart="@drawable/dogtag_icon"
-                android:ems="10"
-                android:hint="@string/id"
-                android:inputType="textPersonName"
-                android:textAllCaps="false"
-                android:textColorHint="@color/colorTransparentWhite"
-                android:textSize="@dimen/login_textSize"
-                />
-
-            <EditText
-                android:id="@+id/password_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="@color/colorAccentLogin"
-                android:drawableStart="@drawable/password_icon"
-                android:ems="10"
-                android:hint="@string/password"
-                android:inputType="textPassword"
-                android:textColorHint="@color/colorTransparentWhite"
-                android:textSize="@dimen/login_textSize" />
-
-            <EditText
-                android:id="@+id/passwordConfirm_et"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="16dp"
-                android:backgroundTint="@color/colorAccentLogin"
-                android:drawableStart="@drawable/key_icon"
-                android:ems="10"
-                android:hint="@string/confirmPassword"
-                android:inputType="textPassword"
-                android:textColorHint="@color/colorTransparentWhite"
-                android:textSize="@dimen/login_textSize" />
-
-            <Button
-                android:id="@+id/check_button"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="16dp"
-                android:layout_marginRight="16dp"
-                android:layout_marginBottom="16dp"
-                android:background="@drawable/round_btn"
-                android:elevation="10dp"
-                android:text="@string/check"
-                android:textSize="@dimen/login_textSize" />
-        </LinearLayout>
-
-    </LinearLayout>
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -106,9 +16,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lign_ll"
-        tools:visibility="visible"
-        >
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -123,11 +32,11 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/colorPrimaryLight"
-                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="@string/email"
                 android:inputType="textEmailAddress"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/name_et"
@@ -135,24 +44,24 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/colorPrimaryLight"
-                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="@string/name"
                 android:inputType="textEmailAddress"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/surname_et"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
-                android:backgroundTint="@color/colorPrimaryLight"
-                android:textColorHint="@color/colorPrimary"
                 android:autofillHints=""
+                android:backgroundTint="@color/colorPrimaryLight"
                 android:ems="10"
                 android:hint="@string/surname"
                 android:inputType="textEmailAddress"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/phone_et"
@@ -160,11 +69,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/colorPrimaryLight"
-                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="@string/phoneNumber"
                 android:inputType="phone"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/street_et"
@@ -172,11 +81,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/colorPrimaryLight"
-                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="@string/adress"
                 android:inputType="textPersonName"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/blockNumber_et"
@@ -184,23 +93,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/colorPrimaryLight"
-                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="@string/blockNumber"
                 android:inputType="textPersonName"
-                android:textAlignment="center" />
-
-            <EditText
-                android:id="@+id/city_et"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginBottom="32dp"
-                android:backgroundTint="@color/colorPrimaryLight"
-                android:textColorHint="@color/colorPrimary"
-                android:ems="10"
-                android:hint="@string/city"
-                android:inputType="textPersonName"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
 
             <EditText
                 android:id="@+id/postalCode_et"
@@ -208,19 +105,57 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="32dp"
                 android:backgroundTint="@color/colorPrimaryLight"
-                android:textColorHint="@color/colorPrimary"
                 android:ems="10"
                 android:hint="@string/postalCode"
                 android:inputType="textPersonName"
-                android:textAlignment="center" />
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/city_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:ems="10"
+                android:hint="@string/city"
+                android:inputType="textPersonName"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/password_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
+
+            <EditText
+                android:id="@+id/cnfPassword_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:backgroundTint="@color/colorPrimaryLight"
+                android:ems="10"
+                android:hint="@string/confirmPassword"
+                android:inputType="textPassword"
+                android:textAlignment="center"
+                android:textColorHint="@color/colorPrimary" />
 
             <Button
                 android:id="@+id/signup_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
                 android:background="@drawable/round_btn"
-                android:text="@string/SignUp"
-                android:layout_marginBottom="16dp"/>
+                android:text="@string/SignUp" />
 
         </LinearLayout>
     </ScrollView>

@@ -11,7 +11,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.ScrollView;
 
-public class Signup extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
 
     private Button signUpBtn, checkBtn;
     private EditText id_et,name_et, surname_et, email_et, password_et, cnfPassword_et, tel_et, street_et, blockNumber_et, city_et, postalCode_et;
@@ -25,14 +25,13 @@ public class Signup extends AppCompatActivity {
         setContentView(R.layout.activity_signup);
         //button
         signUpBtn = (Button) findViewById(R.id.signup_button);
-        checkBtn = (Button) findViewById(R.id.check_button);
+        checkBtn = (Button) findViewById(R.id.login_btn);
         //edit text
-        id_et = (EditText) findViewById(R.id.id_et);
+        id_et = (EditText) findViewById(R.id.email_et);
         name_et = (EditText) findViewById(R.id.name_et);
         surname_et = (EditText) findViewById(R.id.surname_et);
         email_et = (EditText) findViewById(R.id.email_et);
         password_et = (EditText) findViewById(R.id.password_et);
-        cnfPassword_et = (EditText) findViewById(R.id.passwordConfirm_et);
         tel_et = (EditText) findViewById(R.id.phone_et);
         street_et = (EditText) findViewById(R.id.street_et);
         blockNumber_et = (EditText) findViewById(R.id.blockNumber_et);
@@ -51,7 +50,7 @@ public class Signup extends AppCompatActivity {
                 String password_text = password_et.getText().toString().trim();
                 String cnfPassword_text = cnfPassword_et.getText().toString().trim();
                 checkBtn.setElevation(8);
-                
+
                 if (TextUtils.isEmpty(id_text)){
                     id_et.setError("Pole nie może być puste");
                     return;
@@ -79,11 +78,4 @@ public class Signup extends AppCompatActivity {
 
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
-        scrollView.setVisibility(View.INVISIBLE);
-
-
-    }
 }
